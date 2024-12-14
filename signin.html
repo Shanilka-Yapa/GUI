@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateEase Register Page</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <div class="logoname">
+        <img src="Images/logo.png" class="logo" alt="Logo of EstateEase"/>
+        <p><h1>Estate<h1 class="ease">Ease</h1></h1></p>
+    </div>
+</head>
+<body>
+    <div class="Register-container">
+        <h1 class="login">Register Here</h1>
+        <form class="form">
+            
+            <a>
+                <button  onclick="openLink('https://www.facebook.com/login/')" class="btn" style="display: inline-block; margin-right: 10px;">
+                  <img src="Images/facebook.png" alt="Facebook Logo" class="accountlogo">
+                  <b><strong>Facebook</strong></b>
+                </button>
+            </a>
+            <a>
+                <button  onclick="openLink('https://accounts.google.com/')" class="btn" style="display: inline-block; margin-right: 10px;">
+                  <img src="Images/search.png" alt="Google Logo" class="accountlogo">
+                  <b>Google</b>
+                </button>
+            </a>
+            <a>
+                <button  onclick="openLink('https://x.com/i/flow/login')" class="btn" style="display: inline-block;">
+                  <img src="Images/twitter.png" alt="twitter Logo" class="accountlogo">
+                  <b>Twitter</b>
+                </button>
+            </a>
+            <br>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email address:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">I have read,understood and accept <a style="color: aliceblue; text-shadow: 2px 2px 0 rgb(7, 17, 63);" href="Terms and conditions.html" target="_blank">Terms & Conditions</a></label>
+            <br>
+            <br>
+            <button type="submit"><b>Click to Register</b></button>
+            
+        </form>
+    </div>
+    <br>
+    <br>
+    <script src="Javascript/js.js"></script>
+</body>
+
+</html>
