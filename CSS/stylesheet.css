@@ -106,7 +106,7 @@ button:hover{
 
 .accountlogo{
     float:none;
-    width:50px;
+    width:40px;
     margin:auto;
     overflow:hidden;
     padding-bottom:20px
@@ -129,7 +129,15 @@ a{
 
 b{
     text-decoration: none;
-    color: aliceblue;
+    color:rgb(7, 17, 63);
     font-weight: bolder;
 }
+
+p{
+    text-decoration: none;
+    color:aliceblue;
+    font-weight: bolder;
+}
+
+
 
