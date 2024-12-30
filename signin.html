@@ -5,12 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstateEase Register Page</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    
+</head>
+<style>
+    body{
+        background-image: url("Images/house\ 7.jpg");
+        background-size: cover;
+        animation: background-scroll 20s linear infinite;
+    }
+
+    @keyframes background-scroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+    }
+
+    .Register-container{
+    position: relative;
+    margin: 10% auto;
+    text-align: center;
+    border: 5px solid rgb(7, 17, 63);
+    border-radius: 10px;
+    padding:45px 45px 45px 45px;
+    width: 600px;
+    height: 600px;
+    animation: container-move 8s linear infinite;
+    background-color: rgba(235, 226, 226, 0.5);
+}
+@keyframes container-move {
+        0% { background-position: 0 0; }
+        100% { background-position: 100% 0; }
+    }
+    h1{
+        padding-top: 40px;
+    }
+    .joinnow a{
+    color: rgb(6, 88, 88);
+    }
+
+    .joinnow a:hover{
+    color: rgb(7, 17, 63);
+    }
+</style>
+<body>
     <div class="logoname">
-        <img src="Images/logo.png" class="logo" alt="Logo of EstateEase"/>
+        <img src="Images/logo 2.png" class="logo" alt="Logo of EstateEase"/>
         <p><h1>Estate<h1 class="ease">Ease</h1></h1></p>
     </div>
-</head>
-<body>
     <div class="Register-container">
         <h1 class="login">Register Here</h1>
         <form class="form">
@@ -45,6 +85,7 @@
 
             <input type="checkbox" id="checkbox1">
             <label for="checkbox1">I have read,understood and accept <a style="color: aliceblue; text-shadow: 2px 2px 0 rgb(7, 17, 63);" href="Terms and conditions.html" target="_blank">Terms & Conditions</a></label>
+            <center><p class="joinnow">Already a member?<a href="login.html">Log Now</a></p></center>
             <br>
             <br>
             <p><button type="submit">Click to Register</button></p>

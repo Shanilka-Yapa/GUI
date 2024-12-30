@@ -5,13 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstateEase Login Page</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
-    <div class="logoname">
-        <img src="Images/logo.png" class="logo" alt="Logo of EstateEase">
-        <p><h1>Estate<h1 class="ease">Ease</h1></h1></p>
-    </div>
+    
+
     
 </head>
+<style>
+    body{
+        background-image: url("Images/house\ 6.jpg");
+        background-size: cover;
+        animation: background-scroll 20s linear infinite;
+    }
+
+    @keyframes background-scroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+    }
+
+    p{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    padding-top: 50px;
+    align-items: center;
+    }
+
+    .joinnow a{
+    color: rgb(6, 88, 88);
+    }
+
+    .joinnow a:hover{
+    color: rgb(7, 17, 63);
+    }
+
+    .login-container{
+    position: relative;
+    margin: 10% auto;
+    text-align: center;
+    border: 5px solid rgb(7, 17, 63);
+    border-radius: 10px;
+    padding: 45px 45px 45px 45px;
+    animation: container-move 8s linear infinite;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(235, 226, 226, 0.5);
+    }
+
+    @keyframes container-move {
+        0% { background-position: 0 0; }
+        100% { background-position: 100% 0; }
+    }
+
+    h1{
+        padding-top: 40px;
+    }
+
+    
+</style>
 <body>
+    
+    <div class="logoname">
+        <img src="Images/logo 2.png" class="logo" alt="Logo of EstateEase">
+        <p><h1>Estate<h1 class="ease">Ease</h1></h1></p>
+    </div>
     <div class="login-container">
         <h1 class="login">Log in</h1>
         <form class="form">
@@ -21,12 +76,13 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit"><b>Log In</b></button>
+            <p><button type="submit">Log In</button></p>
 
-            <p class="joinnow">Not a member?<a href="signin.html">Join Now</a></p>
+            <center><p class="joinnow">Not a member?<a href="signin.html">Join Now</a></p></center>
         </form>
 
     </div>
+    
     <script src="Javascript/js.js"></script>
 </body>
 </html>
