@@ -1,8 +1,6 @@
-
-
 body{
-
-    margin-bottom: 500px;
+    margin-bottom: 500px; 
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .login{
@@ -62,41 +60,59 @@ button:hover{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 50px;
     flex-grow: 0;
+    padding-top: 30px;
 }
 
-.logo{
-    width: 150px;
-    margin-right: 20px;
-}
 
 .ease{
     color: aliceblue;
     text-shadow:2px 2px 2px rgb(7, 17, 63);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-size: 45px;
+    display: inline;
 }
 
-.accountlogo{
-    float:none;
-    width:40px;
-    margin:auto;
-    overflow:hidden;
-    padding-bottom:20px
+.container{
+    display: flex;
+    padding: 20px;
+    background-image: url('../assets/Images/Background1.jpg');
+    background-size: content; 
+    background-position: center center;
+    background-repeat: no-repeat;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: min-content;
+ }
+ 
+.my-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50px; 
+    padding-top: 1px;
+    margin-right: 10px;
+    
+ }
 
 .btn{
-     background-color: aliceblue;
-     border: 5px solid rgb(7, 17, 63);
-     color: rgb(7, 17, 63);
-     width: 175px;
-     height: 100px;
-     
-
+        background-color: aliceblue;
+        border: 5px solid rgb(7, 17, 63);
+        color: rgb(7, 17, 63);
+        width: 175px;
+        height: 100px;
+        
 }
 
 a{
     text-decoration: none;
     color:rgb(7, 17, 63) ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 b{
@@ -108,23 +124,25 @@ b{
 input:hover {
     border: 2px solid rgb(7, 17, 63); /* Blue border on hover */
     border-radius: 5px; 
-  }
+ }
 
 .navbar{
     align-self: center;
-    margin: 20px 50px 0 300px;
+    margin: 20px 0 0 300px;
     display: flex;
     width:max-content;
     font-size: larger;
     font-weight: bolder;
 }
+
 ul{
     display: flex;
-    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
 }
 
 li{
     margin: 0 20px;
+    margin-bottom: 15px;
+    display: flex;
 }
-
-
