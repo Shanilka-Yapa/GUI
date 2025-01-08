@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Register.css';
 import logo from '../assets/Images/logo.jpeg';
 import facebook from '../assets/Images/facebook.png';
 import google from '../assets/Images/search.png';
 import X from '../assets/Images/twitter.png';
 import { Link } from 'react-router-dom';
+
 export default function Register() {
+    useEffect(() => {
+        // Add a unique class to the body
+        document.body.className = 'register-page-body';
+    
+        // Cleanup when component unmounts
+        return () => {
+          document.body.className = '';
+        };
+      }, []);
     const openLink = (url) => {
         window.open(url, '_blank'); // Open the URL in a new tab
       };
@@ -75,8 +85,8 @@ export default function Register() {
                 <a
                     href="#"
                     style={{
-                        color: "aliceblue",
-                        textShadow: "2px 2px 0 rgb(7, 17, 63)",
+                        color: "rgb(6, 88, 88)",
+                        
                     }}
                 >
                     Terms & Conditions
@@ -96,6 +106,7 @@ export default function Register() {
             </div>
             
             <br/>
+            
             </form>
         </div>
         

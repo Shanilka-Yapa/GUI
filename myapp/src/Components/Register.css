@@ -1,7 +1,8 @@
-body{
+.register-page-body{
     background-image: url('../assets/Images/house7.jpg');
     background-size: cover;
     animation: background-scroll 20s linear infinite;
+    
 }
 
 @keyframes background-scroll {
@@ -12,14 +13,14 @@ body{
 .Reg-container{
 position: relative;
 margin: 10% auto;
-text-align: center;
+align-items: center;
 border: 5px solid rgb(7, 17, 63);
 border-radius: 10px;
 width: 800px;
 height: 600px;
 animation: container-move 8s linear infinite;
 background-color: rgba(235, 226, 226, 0.5);
-padding: 50px 0 0 90px;
+padding: 50px 0 0 50px;
 }
 @keyframes container-move {
     0% { background-position: 0 0; }
@@ -30,6 +31,7 @@ h1{
 }
 .joinnow a{
 color: rgb(6, 88, 88);
+text-decoration: none;
 }
 
 .joinnow a:hover{
@@ -39,6 +41,33 @@ color: rgb(7, 17, 63);
 .logo-container{
     padding: 20px;
     padding-top: 5px;
+}
+.my-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50px; 
+    padding-top: 1px;
+    margin-right: 10px;
+    
+ }
+ .logoname{
+    display: inline-block;
+    position: relative;
+    align-items: flex-start;
+    color: rgb(7, 17, 63);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 0;
+    flex-grow: 0;
+    padding-top: 10px;
+}
+.ease{
+    color: aliceblue;
+    text-shadow:2px 2px 2px rgb(7, 17, 63);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    display: inline;
 }
 .login{
     text-align: center;
@@ -51,6 +80,7 @@ color: rgb(7, 17, 63);
 }
 .form{
     text-align: left;
+    align-items: center;
     color: rgb(7, 17, 63);
     font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -88,7 +118,7 @@ button:hover b  {
     width:40px;
     margin:auto;
     overflow:hidden;
-    padding-bottom:20px
+    padding-bottom:20px;
 }
 
 .btn{
@@ -97,9 +127,8 @@ button:hover b  {
     color: rgb(7, 17, 63);
     width: 175px;
     height: 100px;
-    display: inline-block;
-    margin: 10px;
-
+    display: inline-flex;
+    margin: 20px;
 }
 .submit{
     background-color: aliceblue;
@@ -109,6 +138,7 @@ button:hover b  {
     height: 60px;
     display: inline-block;
     margin: 2px;
+    margin-bottom: 10px;
     
 }
 
@@ -120,6 +150,21 @@ button:hover b  {
 
 .submitcontainer{
     text-align: center;
+    padding-right: 50px;
 }
 
+input[type=text],input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin:8px 0;
+    display:block;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    background-color: aliceblue;
+    
+}
+input:hover {
+    border: 2px solid rgb(7, 17, 63); /* Blue border on hover */
+    border-radius: 5px; 
+  }
 

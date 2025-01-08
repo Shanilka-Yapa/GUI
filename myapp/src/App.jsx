@@ -3,6 +3,7 @@ import Register from "./Components/Register";
 import Login from "./Components/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 export default function App() {
   return (
     <Router>
@@ -17,3 +18,4 @@ export default function App() {
     </Router>
   );
 }
+
