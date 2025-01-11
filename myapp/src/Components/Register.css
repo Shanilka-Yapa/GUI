@@ -17,7 +17,7 @@ align-items: center;
 border: 5px solid rgb(7, 17, 63);
 border-radius: 10px;
 width: 800px;
-height: 600px;
+height: auto;
 animation: container-move 8s linear infinite;
 background-color: rgba(235, 226, 226, 0.5);
 padding: 50px 0 0 50px;
@@ -99,8 +99,12 @@ button {
     margin-top: 15px;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Smooth transition */
   }
-  
-  button:hover {
+.button-container {
+    display: flex;
+    justify-content: center; 
+  }
+
+button:hover {
     background-color: rgb(7, 17, 63);
     border: 5px solid aliceblue;
     font-weight: bolder;

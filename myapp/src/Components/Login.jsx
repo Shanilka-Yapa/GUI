@@ -4,6 +4,7 @@ import logo from '../assets/Images/logo.jpeg';
 import facebook from '../assets/Images/facebook.png';
 import google from '../assets/Images/search.png';
 import X from '../assets/Images/twitter.png';
+import { Link } from 'react-router-dom';
 export default function Login() {
     useEffect(() => {
         // Add a unique className to the body
@@ -43,7 +44,7 @@ export default function Login() {
             <div className='submitcontainer'>
             <p><button type="submit" className='submit'>Log In</button></p>
             </div>
-
+            <div className='button-container'>
             <a>
                 <button 
                     type="button" 
@@ -76,7 +77,12 @@ export default function Login() {
                     <b>X</b>
                 </button>
                 </a>
-            <center><p className="joinnow">Not a member?<a>Join Now</a></p></center>
+            <div/>
+            </div>
+            <center>               
+                <p className="joinnow">
+                    Not a member? <Link to="/register">Join now</Link>
+                </p></center>
         </form>
     </div>
     </div>

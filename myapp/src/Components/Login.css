@@ -125,6 +125,11 @@ input:hover {
     display: inline-flex;
     margin: 5px;
 }
+.button-container {
+    display: flex;
+    justify-content: space-evenly; 
+  }
+
 button {
     background-color: aliceblue;
     font-weight: bolder;

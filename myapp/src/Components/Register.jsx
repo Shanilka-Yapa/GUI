@@ -36,6 +36,7 @@ export default function Register() {
         <div className="Reg-container">
             <h1 className="login">Register Here</h1>
             <form className="form">
+                <div className='button-container'>
                 <a>
                 <button 
                     type="button" 
@@ -68,7 +69,7 @@ export default function Register() {
                     <b>X</b>
                 </button>
                 </a>
-
+                </div>
                 <br/>
                 <label htmlFor="name">Your name:</label>
                 <center><input type="text" id="name" name="name" required/></center>
@@ -79,19 +80,12 @@ export default function Register() {
                 <label htmlFor="password">Create Password:</label>
                 <center><input type="password" id="password" name="password" required/></center>
             <center>
+                <p className="joinnow">
                 <input type="checkbox" id="checkbox1" />
                 <label htmlFor="checkbox1">
-                I have read, understood, and accept{" "}
-                <a
-                    href="#"
-                    style={{
-                        color: "rgb(6, 88, 88)",
-                        
-                    }}
-                >
-                    Terms & Conditions
-                </a>
-            </label>
+                I have read and accepted the <Link to="/terms">Terms and Conditions</Link>  
+                </label>
+                </p>
 
             
                 <p className="joinnow">
