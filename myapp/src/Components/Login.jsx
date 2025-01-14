@@ -42,7 +42,7 @@ export default function Login() {
             <center><input type="password" id="password" name="password" required/></center>
             
             <div className='subcontainer'>
-            <p><button type="submit" className='sub'>Log In</button></p>
+                <button type="submit" className="sub">Log in</button>
             </div>
             <div className='btn-container'>
             <a>
