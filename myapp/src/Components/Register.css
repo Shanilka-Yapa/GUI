@@ -86,37 +86,6 @@ color: rgb(7, 17, 63);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-button {
-    background-color: aliceblue;
-    font-weight: bolder;
-    padding: 14px 20px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-    border: 5px solid rgb(7, 17, 63);
-    cursor: pointer;
-    width: auto;
-    margin-top: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Smooth transition */
-  }
-.button-container {
-    display: flex;
-    justify-content: center; 
-  }
-
-button:hover {
-    background-color: rgb(7, 17, 63);
-    border: 5px solid aliceblue;
-    font-weight: bolder;
-    text-decoration:none;
-    
-  }
-
-button:hover b  {
-    color: aliceblue;
-    text-decoration: none;
-}
-
 .accountlogo{
     float:none;
     width:40px;
@@ -124,39 +93,6 @@ button:hover b  {
     overflow:hidden;
     padding-bottom:20px;
 }
-
-.btn{
-    background-color: aliceblue;
-    border: 5px solid rgb(7, 17, 63);
-    color: rgb(7, 17, 63);
-    width: 175px;
-    height: 100px;
-    display: inline-flex;
-    margin: 20px;
-}
-.submit{
-    background-color: aliceblue;
-    border: 5px solid rgb(7, 17, 63);
-    color: rgb(7, 17, 63);
-    width: 175px;
-    height: 60px;
-    display: inline-block;
-    margin: 2px;
-    margin-bottom: 10px;
-    
-}
-
-.submit:hover{
-    color: aliceblue;
-    text-decoration: none;
-    align-items: center;
-}
-
-.submitcontainer{
-    text-align: center;
-    padding-right: 50px;
-}
-
 input[type=text],input[type=password]{
     width: 80%;
     padding: 12px 20px;
@@ -171,4 +107,5 @@ input:hover {
     border: 2px solid rgb(7, 17, 63); /* Blue border on hover */
     border-radius: 5px; 
   }
+
 

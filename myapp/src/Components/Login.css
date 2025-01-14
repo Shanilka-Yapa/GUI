@@ -54,12 +54,14 @@ input:hover {
     border: 2px solid rgb(7, 17, 63); /* Blue border on hover */
     border-radius: 5px; 
 }
-.joinnow a{
+.join a{
     color: rgb(6, 88, 88);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     
-.joinnow a:hover{
+.join a:hover{
     color: rgb(7, 17, 63);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo-container{
@@ -93,7 +95,7 @@ input:hover {
     font-size: 45px;
     display: inline;
 }
-.submit{
+.sub{
     background-color: aliceblue;
     border: 5px solid rgb(7, 17, 63);
     color: rgb(7, 17, 63);
@@ -105,32 +107,20 @@ input:hover {
     
 }
 
-.submit:hover{
+.sub:hover{
+    background-color: rgb(7, 17, 63);
+    border: 5px solid aliceblue;
+    font-weight: bolder;
+    text-decoration:none;
     color: aliceblue;
-    text-decoration: none;
-    align-items: center;
 }
 
-.submitcontainer{
+.subcontainer{
     text-align: center;
     padding-right: 50px;
     margin-top: 20px;
 }
-.btn{
-    background-color: aliceblue;
-    border: 5px solid rgb(7, 17, 63);
-    color: rgb(7, 17, 63);
-    width: 175px;
-    height: 100px;
-    display: inline-flex;
-    margin: 5px;
-}
-.button-container {
-    display: flex;
-    justify-content: space-evenly; 
-  }
-
-button {
+.btnapp{
     background-color: aliceblue;
     font-weight: bolder;
     padding: 14px 20px;
@@ -139,15 +129,21 @@ button {
     border-radius: 10px;
     border: 5px solid rgb(7, 17, 63);
     cursor: pointer;
-    width: auto;
+    width: 200px;
     margin-top: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    color:rgb(7, 17, 63) ;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-bottom: 20px;
   }
-  
-  button:hover {
+
+.btnapp:hover {
     background-color: rgb(7, 17, 63);
     border: 5px solid aliceblue;
     font-weight: bolder;
     text-decoration:none;
-    
+    color: aliceblue;
   }

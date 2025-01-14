@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import logo from '../assets/Images/logo.jpeg';
 import './Terms.css';
+import { Link } from 'react-router-dom';
 export default function Terms() {
         useEffect(() => {
             // Add a unique class to the body
@@ -11,6 +12,15 @@ export default function Terms() {
               document.body.className = '';
             };
           }, []);
+        const scrollToTerms = () => {
+            const termsSection = document.getElementById('terms-section');
+            termsSection.scrollIntoView({ behavior: 'smooth' });
+          };
+        
+        const scrollToPrivacy = () => {
+            const privacySection = document.getElementById('privacy-section');
+            privacySection.scrollIntoView({ behavior: 'smooth' });
+          };
   return (
     <div>        
         <header>
@@ -23,8 +33,16 @@ export default function Terms() {
             <div className="logoname"> 
                     <h1>Estate<span className="ease">Ease</span></h1>
             </div>
-            </div>    
+            </div>
+            <center>
+        
+            <button onClick={scrollToTerms} className='butn'>Terms and Conditions</button>
+            <span className="button-spacer"></span>
+            <button onClick={scrollToPrivacy} className='butn'>Privacy Policy</button>
+   
+            </center> 
         </header>
+        <div id='terms-section'>
         <div className="outer-wrapper">
             <div className="container">
                 <div className="left-side">
@@ -45,7 +63,8 @@ export default function Terms() {
                 </div>
             </div>
         </div>
-        
+        </div>
+        <div id='privacy-section'>
         <div className="outer-wrapper">
             <div className="container">
                 <div className="left-side">
@@ -62,12 +81,18 @@ export default function Terms() {
                 </div>
             </div>
         </div>
+        </div>
+        <div className='contact'>
         <c>We are available at 
-        <ul>
-            <li>Email   : estateease@gmail.com</li>
-            <li>Contact : 071-2345678</li>
-        </ul>
+        <br/>
+        Email   : estateease@gmail.com<br/>
+        Contact : 071-2345678<br/>
+        
         </c>
+        <br/>
+        <c>Back to <Link to="/register" style={{ color: 'white'}}>sign in</Link></c>
+        </div>
+
     </div>
   )
 }

@@ -72,7 +72,7 @@ button:hover{
     display: inline;
 }
 
-.container{
+.homecontainer{
     display: flex;
     padding: 20px;
     background-image: url('../assets/Images/Background1.jpg');

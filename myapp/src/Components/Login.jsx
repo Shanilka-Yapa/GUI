@@ -41,48 +41,48 @@ export default function Login() {
             <label htmlFor="password">Password:</label>
             <center><input type="password" id="password" name="password" required/></center>
             
-            <div className='submitcontainer'>
-            <p><button type="submit" className='submit'>Log In</button></p>
+            <div className='subcontainer'>
+            <p><button type="submit" className='sub'>Log In</button></p>
             </div>
-            <div className='button-container'>
+            <div className='btn-container'>
             <a>
                 <button 
                     type="button" 
                     onClick={() => openLink('https://www.facebook.com/login/')} 
-                    className="btn"
+                    className="btnapp"
                 >
                     <img src={facebook} alt="Facebook Logo" className="accountlogo" />
-                    <b>Facebook</b>
+                    Facebook
                 </button>
                 </a>
 
                 <a>
                 <button
                     onClick={() => openLink('https://accounts.google.com/')}  
-                    className="btn" 
+                    className="btnapp" 
                     type="button">
 
                     <img src={google} alt="Google Logo" className="accountlogo" />
-                    <b>Google</b>
+                    Google
                 </button>
                 </a>
 
                 <a>
                 <button
                     onClick={() => openLink('https://x.com/i/flow/login')}  
-                    className="btn" 
+                    className="btnapp" 
                     type="button">
 
                     <img src={X} alt="Xaccount Logo" className="accountlogo" />
-                    <b>X</b>
+                    X
                 </button>
                 </a>
-            <div/>
             </div>
             <center>               
-                <p className="joinnow">
+                <div className="join">
                     Not a member? <Link to="/register">Join now</Link>
-                </p></center>
+                </div>
+            </center>
         </form>
     </div>
     </div>

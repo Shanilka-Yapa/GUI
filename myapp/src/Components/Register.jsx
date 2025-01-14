@@ -36,37 +36,37 @@ export default function Register() {
         <div className="Reg-container">
             <h1 className="login">Register Here</h1>
             <form className="form">
-                <div className='button-container'>
+                <div className='btn-container'>
                 <a>
                 <button 
                     type="button" 
                     onClick={() => openLink('https://www.facebook.com/login/')} 
-                    className="btn"
+                    className="btnapp"
                 >
                     <img src={facebook} alt="Facebook Logo" className="accountlogo" />
-                    <b>Facebook</b>
+                    Facebook
                 </button>
                 </a>
 
                 <a>
                 <button
                     onClick={() => openLink('https://accounts.google.com/')}  
-                    className="btn" 
+                    className="btnapp" 
                     type="button">
 
                     <img src={google} alt="Google Logo" className="accountlogo" />
-                    <b>Google</b>
+                    Google
                 </button>
                 </a>
 
                 <a>
                 <button
                     onClick={() => openLink('https://x.com/i/flow/login')}  
-                    className="btn" 
+                    className="btnapp" 
                     type="button">
 
                     <img src={X} alt="Xaccount Logo" className="accountlogo" />
-                    <b>X</b>
+                    X
                 </button>
                 </a>
                 </div>
@@ -83,20 +83,20 @@ export default function Register() {
                 <p className="joinnow">
                 <input type="checkbox" id="checkbox1" />
                 <label htmlFor="checkbox1">
-                I have read and accepted the <Link to="/terms">Terms and Conditions</Link>  
+                <span>&nbsp;</span>I have read and accepted the <Link to="/terms">Terms and Conditions</Link>  
                 </label>
                 </p>
 
             
-                <p className="joinnow">
+                <div className="join">
                     Already a member? <Link to="/login">Log in now</Link>
                     
-                </p>
+                </div>
             </center>
 
             <br/>
-            <div className='submitcontainer'>
-                <button type="submit" className="submit">Click to Register</button>
+            <div className='subcontainer'>
+                <button type="submit" className="sub">Click to Register</button>
             </div>
             
             <br/>
