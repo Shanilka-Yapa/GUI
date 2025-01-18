@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import welcome from '../assets/Images/welcome.jpeg';
 library.add(fas);
 import './Home.css';
 import logo from '../assets/Images/logo.jpeg';
@@ -28,8 +27,8 @@ export default function Home() {
             </div>
           </div>
           <nav className='profileicon'>
-          <d href="#user"><FontAwesomeIcon icon="user" /> </d>
-          <d href="#user"><FontAwesomeIcon icon="bell" /> </d>
+          <d className='round'><FontAwesomeIcon icon="user" /> </d><br/>
+          <d className='round'><FontAwesomeIcon icon="bell" /> </d>
           </nav>
         </div>
       </header>
@@ -74,7 +73,7 @@ export default function Home() {
           <div className="section-content">
             <div className="containerhome">
                   <div className="left-sidehome">
-                    <b style={{ color: "darkcyan", fontSize: "50px" }}>About Us</b>
+                    <b style={{ color: "aliceblue", fontSize: "50px" }}>About Us</b>
                   </div>
                   <div className="right-sidehome">
                   <p style={{fontSize:"20px"}}>Welcome to "EstateEase", where innovation meets simplicity in real estate management.
@@ -85,7 +84,7 @@ export default function Home() {
             </div><br/>
             <div className="containerhome">
                   <div className="left-sidehome">
-                  <b style={{ color: "darkcyan", fontSize: "50px" }}>Our mission</b>
+                  <b style={{ color: "aliceblue", fontSize: "50px" }}>Our mission</b>
                   </div>
                   <div className="right-sidehome">
                   <p style={{fontSize:"20px"}}>
@@ -96,7 +95,7 @@ export default function Home() {
             </div><br/>
             <div className="containerhome">
                   <div className="left-sidehome">
-                  <b style={{ color: "darkcyan", fontSize: "50px" }}>Why Choose Us</b>
+                  <b style={{ color: "aliceblue", fontSize: "50px" }}>Why Choose Us</b>
                   </div>
                   <div className="right-sidehome">
                   <p style={{fontSize:"20px"}}>
@@ -113,7 +112,7 @@ export default function Home() {
             
             <div className="containerhome">
                   <div className="left-sidehome">
-                  <b style={{ color: "darkcyan", fontSize: "50px" }}>Our Vision</b>
+                  <b style={{ color: "aliceblue", fontSize: "50px" }}>Our Vision</b>
                   </div>
                   <div className="right-sidehome">
                   <p style={{fontSize:"20px"}}>
@@ -125,7 +124,7 @@ export default function Home() {
 
             <div className="containerhome">
                   <div className="left-sidehome">
-                  <b style={{ color: "darkcyan", fontSize: "50px" }}>Get Started Today</b>
+                  <b style={{ color: "aliceblue", fontSize: "50px" }}>Get Started Today</b>
                   </div>
                   <div className="right-sidehome">
                   <p style={{fontSize:"20px"}}>
@@ -144,7 +143,7 @@ export default function Home() {
               <center>
                 <b style={{ color: "darkcyan", fontSize: "70px" }}>EstateEase!<br/> <b>You can contact us through</b></b><br/>
               Email     : estateease@gmail.com<br/>
-              Telephone : 0712345678
+              Telephone : +94712345678
               </center>
             </p>
           </div>

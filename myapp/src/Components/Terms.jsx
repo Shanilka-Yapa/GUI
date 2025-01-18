@@ -82,6 +82,7 @@ export default function Terms() {
             </div>
         </div>
         </div>
+        <center>
         <div className='contact'>
         <c>We are available at 
         <br/>
@@ -90,9 +91,9 @@ export default function Terms() {
         
         </c>
         <br/>
-        <c>Back to <Link to="/register" style={{ color: 'white'}}>sign in</Link></c>
+        <c>Back to <Link to="/register" style={{ color: 'darkgreen', textDecoration:'none'}}>sign in</Link></c>
         </div>
-
+        </center>
     </div>
   )
 }

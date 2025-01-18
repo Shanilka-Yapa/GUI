@@ -156,9 +156,22 @@ li{
 .profileicon{
     padding-top: 20px;
     padding-left: 65vw;
-    display: inline-flex;
+    display: inline-flexbox;
     justify-content: space-between;
-}.content-container {
+    
+}
+.round{
+    background-color: white;
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+.content-container {
     margin-top: 20px;
     padding: 10px;
   }
@@ -216,7 +229,7 @@ li{
     background-image: url("../assets/Images/welcome.jpeg");
   }
 .left-sidehome{
-    background-color: rgb(173, 183, 240);
+    background-color: rgb(7, 17, 63);
 } 
 .right-sidehome {
     background-color: #fff;

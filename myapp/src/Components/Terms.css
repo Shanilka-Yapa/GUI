@@ -1,5 +1,6 @@
 .Terms-page-body{
-    background-color:rgb(5, 116, 131);
+    background-image: url("../assets/Images/terms.jpg");
+    background-size: 200% auto;
     justify-content: center;
 }
 .outer-wrapper {
@@ -35,10 +36,10 @@
   }
   
 .left-side {
-    background-color: #4ecec7; 
+    background-color: rgb(7, 17, 63); 
     border-right: 1px solid #ccc; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(7, 17, 63);
+    color: aliceblue;
     line-height: 1.6;
     padding-top: 0;
     border-radius: 15px;
@@ -62,6 +63,7 @@ c{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     font-weight: bolder;
+    text-decoration: none;
 }
 .butn{
   display: inline;
@@ -69,23 +71,28 @@ c{
   width: 300px;
   height: 50px;
   border-radius: 20px;
-  border-width: 5px;
   text-align: center;
   margin-bottom: 20px;
   background-color: aliceblue;
   color: rgb(7, 17, 63);
   font-size: large;
   text-align: middle;
+  border: none;
   
 }
 .butn:hover{
   color: aliceblue;
   background-color: rgb(7, 17, 63);
-  border-width: 5px;
+  border: none;
 }
 .button-spacer {
   margin: 0 10px;
 }
 .contact{
-  text-align: center;
+  text-align: middle;
+  background-color: rgba(255, 255, 255, 0.815);
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  padding-top: 10px;
 }

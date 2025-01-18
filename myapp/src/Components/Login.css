@@ -96,9 +96,9 @@ input:hover {
     display: inline;
 }
 .sub{
-    background-color: aliceblue;
-    border: 5px solid rgb(7, 17, 63);
-    color: rgb(7, 17, 63);
+    background-color: rgb(7, 17, 63);
+    border: none;
+    color: aliceblue;
     width: 175px;
     height: 60px;
     display: inline-block;
@@ -108,11 +108,11 @@ input:hover {
 }
 
 .sub:hover{
-    background-color: rgb(7, 17, 63);
-    border: 5px solid aliceblue;
+    background-color: aliceblue;
+    border: none;
     font-weight: bolder;
     text-decoration:none;
-    color: aliceblue;
+    color: rgb(7, 17, 63);
 }
 
 .subcontainer{
