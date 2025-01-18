@@ -121,18 +121,20 @@ input:hover {
     margin-top: 20px;
 }
 .btnapp{
-    background-color: aliceblue;
-    font-weight: bolder;
+    background-color: rgb(7, 17, 63);
+    font-weight: bold;
     padding: 14px 20px;
     margin: 0 auto;
     display: block;
-    border-radius: 10px;
-    border: 5px solid rgb(7, 17, 63);
+    border-radius: 15px;
     cursor: pointer;
     width: 200px;
     margin-top: 15px;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
     color:rgb(7, 17, 63) ;
+    font-size: 15px;
+    transform: translateZ(2px) rotateX(2deg);
+    
 }
 .btn-container {
     display: flex;
@@ -142,8 +144,7 @@ input:hover {
 
 .btnapp:hover {
     background-color: rgb(7, 17, 63);
-    border: 5px solid aliceblue;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration:none;
     color: aliceblue;
   }

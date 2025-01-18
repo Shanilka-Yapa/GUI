@@ -82,6 +82,7 @@ export default function Login() {
                 <div className="join">
                     Not a member? <Link to="/register">Join now</Link>
                 </div>
+                <Link to="/home">Home</Link>
             </center>
         </form>
     </div>
