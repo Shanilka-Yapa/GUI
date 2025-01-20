@@ -103,6 +103,7 @@ export default function Register() {
             
             </form>
         </div>
+        <Link to="/books">Books</Link>
         
     </div>
   )

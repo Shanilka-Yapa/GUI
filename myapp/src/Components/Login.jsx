@@ -36,7 +36,7 @@ export default function Login() {
         <h1 className="login">Log in</h1>
         <form className="form">
             <label htmlFor="username">Username:</label>
-            <center><input type="text" id="username" name="username" required/></center>
+            <center><input type="text" id="username"  name="username" required/></center>
 
             <label htmlFor="password">Password:</label>
             <center><input type="password" id="password" name="password" required/></center>
