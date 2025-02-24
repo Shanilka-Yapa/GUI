@@ -30,8 +30,8 @@
               "Title": "Loginwindow.xaml",
               "DocumentMoniker": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Loginwindow.xaml",
               "RelativeDocumentMoniker": "Loginwindow.xaml",
-              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Loginwindow.xaml",
-              "RelativeToolTip": "Loginwindow.xaml",
+              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Loginwindow.xaml*",
+              "RelativeToolTip": "Loginwindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-23T20:47:50.611Z",
               "EditorCaption": ""
@@ -45,8 +45,7 @@
               "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-23T19:52:08.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:52:08.37Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:50:28.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:50:28.617Z"
             }
           ]
         }
