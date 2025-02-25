@@ -21,3 +21,5 @@ C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\D
 C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\EstateEase.pdb
 C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\EstateEase.genruntimeconfig.cache
 C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\ref\EstateEase.dll
+C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\Welcome.g.cs
+C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\Welcome.baml

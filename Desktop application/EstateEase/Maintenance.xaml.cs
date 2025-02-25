@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace EstateEase
 {
     /// <summary>
-    /// Interaction logic for Loginwindow.xaml
+    /// Interaction logic for Maintenance.xaml
     /// </summary>
-    public partial class Loginwindow : Window
+    public partial class Maintenance : Window
     {
-        public Loginwindow()
+        public Maintenance()
         {
             InitializeComponent();
-        }
-        private void Log_in(object sender, RoutedEventArgs e)
-        {
-            Welcome welcome = new Welcome();
-            welcome.Show();
-            this.Close();
         }
     }
 }
