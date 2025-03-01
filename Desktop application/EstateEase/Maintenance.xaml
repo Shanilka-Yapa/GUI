@@ -9,9 +9,70 @@
     <Grid
         Background="Black"
         >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <Image
             Stretch="UniformToFill"
             Opacity=" 0.2"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="3"
             Source="Images/maintenanceimage.jpg"/>
+
+        <TextBlock Grid.Row="0" 
+                   Grid.Column="0" 
+                   Grid.ColumnSpan="2"  
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"
+                   FontSize="25" 
+                   Text="Maintenance"
+                   Foreground="LightBlue"
+                   />
+        <StackPanel Grid.Row="1" Grid.Column="1"
+                    VerticalAlignment="Center">
+            <Button FontSize="20" 
+                    Padding="5" 
+                    Margin="5" 
+                    Background="Transparent"
+                    BorderBrush="AliceBlue"
+                    Foreground="LightBlue"
+                    FontWeight="Bold"
+                    Click="Add_Maintenance"
+            >Add</Button>
+            <Button FontSize="20" 
+                    Padding="5" 
+                    Margin="5" 
+                    Background="Transparent"
+                    BorderBrush="AliceBlue"
+                    Foreground="LightBlue"
+                    FontWeight="Bold"
+                    Click="Update_Maintenance">Update</Button>
+            <Button FontSize="20" 
+                    Padding="5" 
+                    Margin="5" 
+                    Background="Transparent"
+                    Foreground="LightBlue"
+                    BorderBrush="AliceBlue"
+                    FontWeight="Bold"
+                    Click="Delete_Maintenance">Delete</Button>
+        </StackPanel>
+        <DataGrid Grid.Row="1"
+                  Background="Transparent"
+                  Foreground="AliceBlue"
+                  Grid.Column="0"
+                  x:Name="productGrid"
+                  AutoGenerateColumns="True"
+                  Margin="10"
+                  VerticalAlignment="Stretch"
+                  HorizontalAlignment="Stretch"/>
+
     </Grid>
+    
 </Window>

@@ -7,24 +7,8 @@
       "RelativeMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|solutionrelative:maintenance.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|c:\\users\\cnn computers\\documents\\github\\gui\\desktop application\\estateease\\welcome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|solutionrelative:welcome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|c:\\users\\cnn computers\\documents\\github\\gui\\desktop application\\estateease\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|solutionrelative:loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|c:\\users\\cnn computers\\documents\\github\\gui\\desktop application\\estateease\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|c:\\users\\cnn computers\\documents\\github\\gui\\desktop application\\estateease\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|c:\\users\\cnn computers\\documents\\github\\gui\\desktop application\\estateease\\welcome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|solutionrelative:welcome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|c:\\users\\cnn computers\\documents\\github\\gui\\desktop application\\estateease\\fillbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4629F79E-1D99-4D70-B4A7-D61405984820}|EstateEase.csproj|solutionrelative:fillbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,14 +23,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Welcome.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Welcome.xaml.cs",
-              "RelativeDocumentMoniker": "Welcome.xaml.cs",
-              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Welcome.xaml.cs",
-              "RelativeToolTip": "Welcome.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T09:19:12.927Z",
+              "Title": "Fillbox.xaml",
+              "DocumentMoniker": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Fillbox.xaml",
+              "RelativeDocumentMoniker": "Fillbox.xaml",
+              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Fillbox.xaml",
+              "RelativeToolTip": "Fillbox.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-01T08:38:51.681Z",
               "EditorCaption": ""
             },
             {
@@ -59,55 +42,6 @@
               "RelativeToolTip": "Maintenance.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-25T09:15:40.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Loginwindow.xaml",
-              "DocumentMoniker": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Loginwindow.xaml",
-              "RelativeDocumentMoniker": "Loginwindow.xaml",
-              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Loginwindow.xaml",
-              "RelativeToolTip": "Loginwindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-25T05:53:09.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Welcome.xaml",
-              "DocumentMoniker": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Welcome.xaml",
-              "RelativeDocumentMoniker": "Welcome.xaml",
-              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\Welcome.xaml",
-              "RelativeToolTip": "Welcome.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-25T05:34:14.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-23T19:52:08.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\CNN COMPUTERS\\Documents\\GitHub\\GUI\\Desktop application\\EstateEase\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:50:28.617Z",
               "EditorCaption": ""
             }
           ]

@@ -53,7 +53,7 @@ namespace EstateEase {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EstateEase;component/loginwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EstateEase;V1.0.0.0;component/loginwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Loginwindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
