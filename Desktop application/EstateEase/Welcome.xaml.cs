@@ -29,5 +29,10 @@ namespace EstateEase
             maintenance.Show();
             this.Close();
         }
+
+        private void View_Dashboard(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -75,7 +75,8 @@
                 Background="Transparent"
                 Foreground="Black"
                 FontSize="35"
-                FontWeight="ExtraBlack"
+                FontWeight="ExtraBlack" 
+                Click="View_Dashboard"
             >Dashboard
          </Button>
         <Button

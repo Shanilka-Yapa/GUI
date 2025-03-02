@@ -122,6 +122,15 @@
                     Foreground="DarkBlue"
                     FontWeight="Bold"
                     Click="Cancel_issue"/>
+            <Button Content="Clear"
+                    Width="100"
+                    Height="40"
+                    Margin="20 5"
+                    FontSize="25"
+                    Background="LightBlue"
+                    Foreground="DarkBlue"
+                    FontWeight="Bold"
+                    Click="Clear_issue"/>
         </StackPanel>
     </Grid>
 </Window>

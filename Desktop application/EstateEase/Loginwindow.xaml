@@ -104,7 +104,7 @@
                 Content="Log in"
                 Width="100"
                 Height="40"
-                Margin="20 5"
+                Margin="20 0 0 10"
                 FontSize="25"
                 Click="Log_in"/>
         </StackPanel>

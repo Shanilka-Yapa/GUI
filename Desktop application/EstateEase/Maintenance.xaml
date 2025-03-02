@@ -62,12 +62,20 @@
                     BorderBrush="AliceBlue"
                     FontWeight="Bold"
                     Click="Delete_Maintenance">Delete</Button>
+            <Button FontSize="20" 
+                    Padding="5" 
+                    Margin="5" 
+                    Background="Transparent"
+                    Foreground="LightBlue"
+                    BorderBrush="AliceBlue"
+                    FontWeight="Bold"
+                    Click="Back_Button">Back</Button>
         </StackPanel>
         <DataGrid Grid.Row="1"
-                  Background="Transparent"
-                  Foreground="AliceBlue"
+                  Background="AliceBlue"
+                  Foreground="Black"
                   Grid.Column="0"
-                  x:Name="productGrid"
+                  x:Name="InfoGrid"
                   AutoGenerateColumns="True"
                   Margin="10"
                   VerticalAlignment="Stretch"
