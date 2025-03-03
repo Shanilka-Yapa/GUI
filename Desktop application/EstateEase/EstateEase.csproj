@@ -10,10 +10,23 @@
 
   <ItemGroup>
     <None Remove="Images\dashboard.jpg" />
+    <None Remove="Images\House1.jpg" />
+    <None Remove="Images\House2.jpg" />
+    <None Remove="Images\House3.jpg" />
     <None Remove="Images\house7.jpg" />
     <None Remove="Images\Logo1.jpeg" />
     <None Remove="Images\maintenanceimage.jpg" />
+    <None Remove="Images\Properties.jpg" />
     <None Remove="Images\welcome.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\House1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\House2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +46,9 @@
     <Resource Include="Images\dashboard.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\House3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\house7.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -40,6 +56,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\maintenanceimage.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Properties.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\welcome.jpeg">

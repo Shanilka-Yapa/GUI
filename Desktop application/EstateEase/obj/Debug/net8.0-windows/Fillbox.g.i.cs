@@ -85,7 +85,7 @@ namespace EstateEase {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EstateEase;V1.0.0.0;component/fillbox.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EstateEase;component/fillbox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Fillbox.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

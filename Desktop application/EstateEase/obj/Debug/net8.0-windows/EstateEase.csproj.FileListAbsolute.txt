@@ -154,3 +154,8 @@ C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\bin\D
 C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\EstateEase.csproj.AssemblyReference.cache
 C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\EstateEase.csproj.Up2Date
+C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\Dashboard.g.cs
+C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\Dashboard.baml
+C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\Properties.g.cs
+C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\App.baml
+C:\Users\CNN COMPUTERS\Documents\GitHub\GUI\Desktop application\EstateEase\obj\Debug\net8.0-windows\Properties.baml

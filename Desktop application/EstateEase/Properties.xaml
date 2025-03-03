@@ -1,0 +1,111 @@
+﻿<Window x:Class="EstateEase.Properties"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EstateEase"
+        mc:Ignorable="d"
+        Title="Properties" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+
+        </Grid.RowDefinitions>
+        <Image
+            Source="Images/Properties.jpg"
+            Stretch="UniformToFill"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="6"/>
+        <Button 
+            Style="{StaticResource RoundButtonStyle}"
+            Grid.Column="0"
+            Grid.Row="0"
+            Background="#FF778B92"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontSize="30"
+            Width="180"
+            Height="60"
+            BorderBrush="Black"
+            Click="Back_Button"
+            Margin="5 10"
+            >Back</Button>
+        
+        <Grid Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Margin="10">
+            <!-- Arrow Buttons at the Top -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Button 
+            Style="{StaticResource RoundButtonStyle}"
+            Content="←" 
+            Background="#FF13243C"
+            Foreground="AliceBlue"
+            FontWeight="Bold"
+            FontSize="20" 
+            Width="50" 
+            Height="50"
+            Click="Prev_House"
+            Grid.Column="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Margin="0"/>
+
+                <Button 
+            Style="{StaticResource RoundButtonStyle}"
+            Content="→"
+            Background="#FF13243C"
+            Foreground="AliceBlue"
+            FontWeight="Bold"
+            FontSize="20" 
+            Width="50" 
+            Height="50"
+            Click="Next_House"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="0"/>
+            </Grid>
+
+            <!-- Image and House Info Below -->
+            <StackPanel 
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="10">
+                <Image 
+                    x:Name="HouseImage"
+                    Width="250" 
+                    Height="250"
+                    Stretch="Uniform"
+                    Margin="10"/>
+
+                <TextBlock 
+                    x:Name="HouseIDText"
+                    FontSize="18" 
+                    FontWeight="Bold"
+                    Text="ID: " 
+                    Foreground="AliceBlue"/>
+                <TextBlock 
+                    x:Name="HouseAddressText"
+                    FontSize="18" 
+                    Foreground="AliceBlue"
+                    Text="Address: "/>
+                <TextBlock 
+                    x:Name="HousePriceText"
+                    FontSize="18" 
+                    Foreground="AliceBlue"
+                    Text="Price: "/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

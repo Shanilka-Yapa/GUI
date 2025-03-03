@@ -19,6 +19,9 @@
     <Compile Update="Maintenance.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Properties.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Welcome.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Properties.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Welcome.xaml">

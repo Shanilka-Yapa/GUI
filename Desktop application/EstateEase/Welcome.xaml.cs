@@ -32,7 +32,18 @@ namespace EstateEase
 
         private void View_Dashboard(object sender, RoutedEventArgs e)
         {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Close();
+        }
 
+        
+
+        private void View_Properties(object sender, RoutedEventArgs e)
+        {
+            Properties property = new Properties();
+            property.Show();
+            this.Close();
         }
     }
 }
