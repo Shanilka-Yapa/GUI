@@ -20,9 +20,11 @@ namespace EstateEase
         // Load house details into the list
         private void LoadHouses()
         {
-            houses.Add(new House { ID = 1, Address = "123 Main St", Price = "$250,000", ImagePath = @"Images/House1.jpg" });
-            houses.Add(new House { ID = 2, Address = "456 Oak Ave", Price = "$320,000", ImagePath = @"Images/House2.jpg" });
-            houses.Add(new House { ID = 3, Address = "789 Pine Rd", Price = "$400,000", ImagePath = @"Images/House3.jpg" });
+            houses.Add(new House { ID = 001, Address = "123 Main St,Colombo", Price = "RS 200 Lakhs", ImagePath = @"Images/House1.jpg" });
+            houses.Add(new House { ID = 002, Address = "456 Oak Ave,Maharagama", Price = "RS 250 Lakshs", ImagePath = @"Images/House2.jpg" });
+            houses.Add(new House { ID = 003, Address = "789 Pine Rd,Colombo", Price = "RS 150 Lakhs", ImagePath = @"Images/House3.jpg" });
+            houses.Add(new House { ID = 004, Address = "101 Armstrong road, Kadawatha", Price = "RS 125 Lakhs", ImagePath = @"Images/House4.jpg" });
+            houses.Add(new House { ID = 005, Address = "2020 5th Avenue, Kaduwela", Price = "RS 500 Lakhs", ImagePath = @"Images/House5.jpg" });
         }
 
         // Update UI to display the current house
@@ -67,6 +69,16 @@ namespace EstateEase
             Welcome welcomewindow = new Welcome();
             welcomewindow.Show();
             this.Close();
+        }
+
+        private void Request_Button(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Do you want to request more information?", "Confirm Request", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                MessageBox.Show("Information will be sent to your email.", "Request Received", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }

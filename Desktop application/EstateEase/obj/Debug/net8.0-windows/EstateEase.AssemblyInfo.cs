@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstateEase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d52adcb3da1a72d0a8b9754139c3fd51f161b03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23f0362338af57fe557711bc1b825f0401a5aaf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstateEase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstateEase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

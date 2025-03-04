@@ -94,7 +94,7 @@
             <Button
                 Style="{StaticResource RoundButtonStyle}"
                 Foreground="AliceBlue"
-                Background="Black"
+                Background="#FF08293A"
                 Content="Log in"
                 Width="163"
                 Height="59"

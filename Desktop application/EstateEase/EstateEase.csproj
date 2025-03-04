@@ -13,6 +13,8 @@
     <None Remove="Images\House1.jpg" />
     <None Remove="Images\House2.jpg" />
     <None Remove="Images\House3.jpg" />
+    <None Remove="Images\House4.jpg" />
+    <None Remove="Images\House5.jpg" />
     <None Remove="Images\house7.jpg" />
     <None Remove="Images\Logo1.jpeg" />
     <None Remove="Images\maintenanceimage.jpg" />
@@ -48,6 +50,12 @@
     </Resource>
     <Resource Include="Images\House3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\House4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\House5.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\house7.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

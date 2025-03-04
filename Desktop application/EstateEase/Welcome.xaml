@@ -19,13 +19,19 @@
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
-        
+        <Image 
+            Grid.Column="1"
+            Grid.RowSpan="3"
+            Stretch="UniformToFill"
+            Opacity="0.2"
+            Source="Images/welcome.jpeg"/>
         <Rectangle
             Grid.Column="1"
             Fill="Black"
-            Opacity="0.8"
-            Grid.RowSpan="7"
+            Opacity="0.5"
+            Grid.RowSpan="3" Margin="10,0,0,0"
             >
+            
         </Rectangle>
 
         <StackPanel
@@ -61,8 +67,8 @@
                 Height="60"
                 VerticalAlignment="Center"
                 Grid.Column="0"
-                Background="#FF0C1133"
-                Foreground="White"
+                Background="#FF58CFF1"
+                Foreground="Black"
                 FontSize="35"
                 FontWeight="Regular"
                 Click="View_Dashboard" Margin="35,0,35,0"
@@ -75,8 +81,8 @@
                 VerticalAlignment="Center"
                 Grid.Column="0"
                 Grid.Row="1"
-                Background="#FF0C1133"
-                Foreground="White"
+                Background="#FF58CFF1"
+                Foreground="Black"
                 FontSize="35"
                 FontWeight="Regular"
                 Margin="22,0,22,0"
@@ -89,8 +95,8 @@
                 VerticalAlignment="Center"
                 Grid.Column="0"
                 Grid.Row="2"
-                Background="#FF0C1133"
-                Foreground="White"
+                Background="#FF58CFF1"
+                Foreground="Black"
                 FontSize="35"
                 FontWeight="Regular"
                 Click="Maintenance_add"

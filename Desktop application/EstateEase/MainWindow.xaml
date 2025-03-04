@@ -20,7 +20,7 @@
         <Button     Style="{StaticResource RoundButtonStyle}"
                     Width="250" Height="67"
                     Foreground="Black"
-                    Background="#FF52CCF1"
+                    Background="#FF58CFF1"
                     FontSize="28"
                     FontFamily="Segoe UI"
                     FontWeight="DemiBold"

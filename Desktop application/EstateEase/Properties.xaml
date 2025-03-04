@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:EstateEase"
         mc:Ignorable="d"
         Title="Properties" Height="450" Width="800">
-    <Grid>
+    <Grid
+        Background="#FF08293A">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="6*"/>
@@ -17,25 +18,39 @@
             <RowDefinition Height="2*"/>
 
         </Grid.RowDefinitions>
-        <Image
-            Source="Images/Properties.jpg"
-            Stretch="UniformToFill"
-            Grid.ColumnSpan="2"
-            Grid.RowSpan="6"/>
+        <Rectangle Fill="Black"
+                   Grid.Column="0"
+                   Grid.RowSpan="3"
+                   Opacity="0.4"/>
+
         <Button 
             Style="{StaticResource RoundButtonStyle}"
             Grid.Column="0"
             Grid.Row="0"
-            Background="#FF778B92"
+            Background="#FF58CFF1"
             Foreground="Black"
             FontWeight="Bold"
             FontSize="30"
-            Width="180"
+            Width="200"
             Height="60"
             BorderBrush="Black"
             Click="Back_Button"
             Margin="5 10"
             >Back</Button>
+        <Button 
+            Style="{StaticResource RoundButtonStyle}"
+            Grid.Column="0"
+            Grid.Row="2"
+            Background="#FF58CFF1"
+            Foreground="Black"
+            FontWeight="Bold"
+            FontSize="30"
+            Width="200"
+            Height="60"
+            BorderBrush="Black"
+            Click="Request_Button"
+            Margin="5 10"
+    >Request Info</Button>
         
         <Grid Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Margin="10">
             <!-- Arrow Buttons at the Top -->
@@ -44,12 +59,13 @@
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
+              
 
                 <Button 
             Style="{StaticResource RoundButtonStyle}"
             Content="←" 
-            Background="#FF13243C"
-            Foreground="AliceBlue"
+            Background="#FF58CFF1"
+            Foreground="Black"
             FontWeight="Bold"
             FontSize="20" 
             Width="50" 
@@ -63,8 +79,8 @@
                 <Button 
             Style="{StaticResource RoundButtonStyle}"
             Content="→"
-            Background="#FF13243C"
-            Foreground="AliceBlue"
+            Background="#FF58CFF1"
+            Foreground="Black"
             FontWeight="Bold"
             FontSize="20" 
             Width="50" 
