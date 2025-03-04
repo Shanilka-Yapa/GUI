@@ -108,4 +108,35 @@ input:hover {
     border-radius: 5px; 
   }
 
+  .regbut {
+    background-color: rgb(7, 17, 63);
+    width: 140px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-left: 38%;
+  }
+  
+  .regbut:hover {
+    background-color: aliceblue;
+    border: none;
+    font-weight: bolder;
+  }
+  
+  .regbut-link {
+    color: aliceblue;
+    text-decoration: none;
+    display: block; /* Ensure the link fills the button */
+    width: 100%; /* Make the link take up the whole width */
+    height: 100%; /* Make the link take up the whole height */
+    line-height: 60px; /* Vertically center the text */
+  }
+  
+  .regbut-link:hover {
+    color: rgb(7, 17, 63);
+  }
+  
+  .regbut:hover .regbut-link {
+    color: rgb(7, 17, 63); /* Change link color when button is hovered */
+  }
+
 

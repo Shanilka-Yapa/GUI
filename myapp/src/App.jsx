@@ -3,10 +3,8 @@ import Register from "./Components/Register";
 import Login from "./Components/Login";
 import Terms from "./Components/Terms";
 import Home from "./Components/Home";
-import Books from "./Books";
+import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
 export default function App() {
   
   return (
@@ -18,11 +16,13 @@ export default function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/terms" element={<Terms />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/books" element={<Books />} />
+          <Route path="/home" element={<Home />} /> 
+                  
         </Routes>
+        <Footer/>
       </div>
     </Router>
+    
   );
 }
 

@@ -148,3 +148,15 @@ input:hover {
     text-decoration:none;
     color: aliceblue;
   }
+  .logbut {
+    background-color: rgb(7, 17, 63);
+    width: 140px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-left: 38%;
+  }
+  .logbut:hover {
+    background-color: aliceblue;
+    border: none;
+    font-weight: bolder;
+  }

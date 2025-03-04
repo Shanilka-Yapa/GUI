@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import HouseGallery from "./HouseGallery";
+
 library.add(fas);
 import './Home.css';
 import logo from '../assets/Images/logo.jpeg';
@@ -41,10 +43,9 @@ export default function Home() {
               <li onClick={() => toggleSection("home")}><d><FontAwesomeIcon icon="home" /> Home</d></li>
               <li onClick={() => toggleSection("about")}><d><FontAwesomeIcon icon="info-circle"/>About us</d></li>
               <li onClick={() => toggleSection("contacts")}><d><FontAwesomeIcon icon="phone"/>Contact</d></li>
-              <li onClick={() => toggleSection("rent")}><d><FontAwesomeIcon icon="house-user"/>Rent</d></li>
-              <li onClick={() => toggleSection("buy")}><d><FontAwesomeIcon icon="key"/>Buy</d></li>
+              <li onClick={() => toggleSection("properties")}><d><FontAwesomeIcon icon="house-user"/>Properties</d></li>
               <li onClick={() => toggleSection("loan")}><d><FontAwesomeIcon icon="hand-holding-usd"/>House-loans</d></li>
-              <li onClick={() => toggleSection("cart")}><d><FontAwesomeIcon icon="shopping-cart"/>Cart</d></li>
+              <li onClick={() => toggleSection("wishlist")}><d><FontAwesomeIcon icon="shopping-cart"/>Wishlist</d></li>
             </ul>
           </nav>
           </center>
@@ -54,7 +55,7 @@ export default function Home() {
           <div className="section-content">
             <p className="wel">
               <center>
-                Welcome to <b style={{ color: "darkcyan", fontSize: "70px" }}>EstateEase!</b>
+                Welcome to <b style={{ color: "rgba(8, 110, 141, 0.863)", fontSize: "50px" }}>EstateEase!</b>
                 <div className="containerhome">
                   <div className="left-sidehome1" >
                   </div>
@@ -141,13 +142,15 @@ export default function Home() {
           <div className="section-content">
             <p className="wel">
               <center>
-                <b style={{ color: "darkcyan", fontSize: "70px" }}>EstateEase!<br/> <b>You can contact us through</b></b><br/>
+                <b style={{ color: "rgba(8, 110, 141, 0.863)", fontSize: "50px" }}>EstateEase!<br/> <b>You can contact us through</b></b><br/>
               Email     : estateease@gmail.com<br/>
               Telephone : +94712345678
               </center>
             </p>
           </div>
             )}
+
+{activeSection === "properties" && <HouseGallery />}
           </div>
         </div>
 

@@ -26,9 +26,10 @@ input[type=text],input[type=password]{
     border-radius: 10px;
     background-color: aliceblue;
     
+    
 }
 
-button{
+/*button{
     background-color:rgb(7, 17, 63);
     color: aliceblue;
     font-weight: bolder;
@@ -47,7 +48,7 @@ button:hover{
     border: 1px solid aliceblue;
     color:rgb(7, 17, 63) ;
     font-weight: bolder;
-}
+}*/
 
 
 
@@ -75,7 +76,8 @@ button:hover{
 .homecontainer{
     display: flex;
     padding: 20px;
-    background-image: url('../assets/Images/Background1.jpg');
+    /*background-image: url('../assets/Images/Background1.jpg');*/
+    background-color: rgba(8, 110, 141, 0.863);
     background-size: content; 
     background-position: center center;
     background-repeat: no-repeat;
@@ -226,7 +228,9 @@ li{
   }
   
 .left-sidehome1 {
-    background-image: url("../assets/Images/welcome.jpeg");
+    /*background-image: url("../assets/Images/welcome.jpeg");*/
+    background-image: url("../assets/Images/welcome.jpg");
+    background-position:center;
   }
 .left-sidehome{
     background-color: rgb(7, 17, 63);

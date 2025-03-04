@@ -1,0 +1,13 @@
+.footer {
+    background-color: rgb(7, 17, 63); /* Same as your button color */
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Makes it stay at the bottom */
+    bottom: 0;
+    width: 100%;
+  }
+.Footerms{
+    color: aliceblue;
+    text-decoration: none;
+}  
