@@ -3,16 +3,31 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HouseGallery from "./HouseGallery";
+import Wishlist from "./wishlist";
+import Loan from './Loan';
+import ProfileIcon from './ProfileIcon';
 
 library.add(fas);
 import './Home.css';
-import logo from '../assets/Images/logo.jpeg';
+import logo from '../assets/Images/namelogo.png';
 export default function Home() {
   const [activeSection, setActiveSection] = useState(null);
+  const [wishlist, setWishlist] = useState([]); // State for wishlist
+  
 
   const toggleSection = (section) => {
     setActiveSection(activeSection === section ? null : section);
   };
+    // Function to add a house to the wishlist
+    const addToWishlist = (house) => {
+      setWishlist((prevWishlist) => [...prevWishlist, house]);
+    };
+  
+    // Function to remove house from wishlist
+    const removeFromWishlist = (id) => {
+      setWishlist(wishlist.filter(house => house.id !== id));
+    };
+    
   return (
     <div className="Home">
       <header> 
@@ -22,17 +37,11 @@ export default function Home() {
             <img 
               src={logo} 
               alt="My Image" 
-              className="my-image" 
+              className="logo-image" 
             />
-            <div className="logoname"> 
-              <h1>Estate<span className="ease">Ease</span></h1>
-            </div>
           </div>
-          <nav className='profileicon'>
-          <d className='round'><FontAwesomeIcon icon="user" /> </d><br/>
-          <d className='round'><FontAwesomeIcon icon="bell" /> </d>
-          </nav>
-        </div>
+          <ProfileIcon />
+      </div>
       </header>
 
       <main> 
@@ -150,7 +159,14 @@ export default function Home() {
           </div>
             )}
 
-{activeSection === "properties" && <HouseGallery />}
+            {activeSection === "properties" && (
+              <HouseGallery addToWishlist={addToWishlist} />
+            )}
+            {activeSection === "wishlist" && (
+              <Wishlist wishlist={wishlist} removeFromWishlist={removeFromWishlist} />
+            )}
+            {activeSection === "loan" && <Loan />}
+
           </div>
         </div>
 

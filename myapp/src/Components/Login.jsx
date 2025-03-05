@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Login.css';
-import logo from '../assets/Images/logo.jpeg';
+import logo from '../assets/Images/namelogo.png';
 import facebook from '../assets/Images/facebook.png';
 import google from '../assets/Images/search.png';
 import X from '../assets/Images/twitter.png';
@@ -50,13 +50,10 @@ export default function Login() {
 
   return (
     <div className='Log'>
-      <header>
+      <header className='header'>
         <div className="logo-container">
-          <img src={logo} alt="Logo" className="my-image" />
-          <div className="logoname">
-            <h1>Estate<span className="ease">Ease</span></h1>
-          </div>
-        </div>    
+          <img src={logo} alt="Logo" className="logo-image" />
+        </div>
       </header>
 
       <div className="login-container">
@@ -71,7 +68,7 @@ export default function Login() {
           {error && <p className="error">{error}</p>} {/* Display error message if exists */}
           
           <div >
-            <button type="submit" className="logbut"><Link to="/home" className='regbut-link'>Log in</Link></button>
+            <button type="submit" className="logbut">Log in</button>
           </div>
 
           <div className='btn-container'>

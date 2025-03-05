@@ -17,8 +17,7 @@
     background-color: #fff;
     border-radius: 15px;
     border-width: 15px;
-    border-color: rgb(7, 17, 63);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: rgb(7, 17, 63); 
     overflow: hidden;
     width: 60%;
     max-width: 800px; 
@@ -38,7 +37,7 @@
 .left-side {
     background-color: rgb(7, 17, 63); 
     border-right: 1px solid #ccc; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Times new roman", Times, serif;
     color: aliceblue;
     line-height: 1.6;
     padding-top: 0;
@@ -49,7 +48,7 @@
   
 .right-side {
     background-color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:"Times New Roman", Times, serif;
     color: rgb(7, 17, 63);
     font-weight: bold;
   }
@@ -60,14 +59,14 @@ b{
 }
 c{
     color: rgb(7, 17, 63);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
 }
 .butn{
   display: inline;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   width: 300px;
   height: 50px;
   border-radius: 20px;
@@ -95,4 +94,7 @@ c{
   height: 150px;
   border-radius: 10px;
   padding-top: 10px;
+}
+.terms-container{
+  margin-top: 20px;
 }

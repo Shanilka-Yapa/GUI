@@ -1,0 +1,116 @@
+/* Main container - Now displays house list on the left */
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Optional: To ensure content doesn't stretch too wide */
+    margin: auto; /* Center content */
+}
+
+/* House selection list (Column format on the left side) */
+.house-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.house-thumbnail {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, opacity 0.3s;
+    opacity: 0.6;
+}
+
+.house-thumbnail:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+    opacity: 1;
+}
+
+/* Active house thumbnail - The selected house gets full opacity and a border */
+.house-thumbnail.active {
+    opacity: 1;
+    border: 3px solid #007bff;
+    transform: scale(1.1);
+}
+
+/* Main image display - Adjusted size */
+.image-display {
+    width: 400px;   /* Set a fixed width */
+    height: 250px;  /* Adjusted height to avoid being too large */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Thumbnail gallery below the main image */
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Sub-thumbnails */
+.thumbnail {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, opacity 0.3s;
+    opacity: 0.7;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+    opacity: 1;
+}
+
+/* Active sub-thumbnail (currently displayed main image) */
+.thumbnail.active-thumbnail {
+    border: 3px solid #007bff;
+    opacity: 1;
+}
+
+.house-details {
+    margin-top: 40px;
+  }
+  
+  .house-details p {
+    font-size: 20px;
+    color: rgb(39, 5, 80);
+    margin: 5px 0;
+  }
+  .wishlist-button {
+    background-color: rgb(7, 17, 63);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .wishlist-button:hover {
+    background-color: white;
+    color: rgb(7, 17, 63);
+  }
+  

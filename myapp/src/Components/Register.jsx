@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Register.css';
-import logo from '../assets/Images/logo.jpeg';
+import logo from '../assets/Images/namelogo.png';
 import facebook from '../assets/Images/facebook.png';
 import google from '../assets/Images/search.png';
 import X from '../assets/Images/twitter.png';
-import { Link } from 'react-router-dom';
-import axios from 'axios'; // Import Axios
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import axios from 'axios';
 
 export default function Register() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,8 @@ export default function Register() {
     email: '',
     password: ''
   });
+
+  const navigate = useNavigate(); // Initialize navigation
 
   useEffect(() => {
     document.body.className = 'register-page-body';
@@ -33,9 +35,11 @@ export default function Register() {
     e.preventDefault();
     
     try {
-      // Send data to backend using POST request
       const response = await axios.post('http://localhost:5000/register', formData);
-      alert(response.data.message); // Display the success message
+      alert(response.data.message); // Show success message
+      
+      // Navigate to login page after successful registration
+      navigate('/login');
     } catch (error) {
       console.error('Error registering user:', error);
       alert('Error registering user');
@@ -44,12 +48,9 @@ export default function Register() {
 
   return (
     <div className='Register'>
-      <header>
+      <header className='header'>
         <div className="logo-container">
-          <img src={logo} alt="Logo" className="my-image" />
-          <div className="logoname">
-            <h1>Estate<span className="ease">Ease</span></h1>
-          </div>
+          <img src={logo} alt="Logo" className="logo-image" />
         </div>
       </header>
       
@@ -58,27 +59,23 @@ export default function Register() {
         
         <form className="form" onSubmit={handleSubmit}>
           <div className='btn-container'>
-            <a>
-              <button type="button" onClick={() => openLink('https://www.facebook.com/login/')} className="btnapp">
-                <img src={facebook} alt="Facebook Logo" className="accountlogo" />
-                Facebook
-              </button>
-            </a>
-            <a>
-              <button type="button" onClick={() => openLink('https://accounts.google.com/')} className="btnapp">
-                <img src={google} alt="Google Logo" className="accountlogo" />
-                Google
-              </button>
-            </a>
-            <a>
-              <button type="button" onClick={() => openLink('https://x.com/i/flow/login')} className="btnapp">
-                <img src={X} alt="X Logo" className="accountlogo" />
-                X
-              </button>
-            </a>
+            <button type="button" onClick={() => openLink('https://www.facebook.com/login/')} className="btnapp">
+              <img src={facebook} alt="Facebook Logo" className="accountlogo" />
+              Facebook
+            </button>
+
+            <button type="button" onClick={() => openLink('https://accounts.google.com/')} className="btnapp">
+              <img src={google} alt="Google Logo" className="accountlogo" />
+              Google
+            </button>
+
+            <button type="button" onClick={() => openLink('https://x.com/i/flow/login')} className="btnapp">
+              <img src={X} alt="X Logo" className="accountlogo" />
+              X
+            </button>
           </div>
 
-          <label htmlFor="name">Your name:</label>
+          <label htmlFor="name">Username:</label>
           <center><input type="text" id="name" name="name" required value={formData.name} onChange={handleChange} /></center>
 
           <label htmlFor="email">Email address:</label>
@@ -103,13 +100,12 @@ export default function Register() {
           <br />
           
           <div>
-            <button type="submit" className="regbut"><Link to="/login" className='regbut-link'>Click to Register</Link></button>
+            <button type="submit" className="regbut">Click to Register</button>
           </div>
           
           <br />
         </form>
       </div>
-      
     </div>
   );
 }

@@ -13,7 +13,6 @@
     position: relative;
     margin: 10% auto;
     text-align: center;
-    border: 5px solid rgb(7, 17, 63);
     border-radius: 10px;
     padding: 45px 45px 45px 45px;
     animation: container-move 8s linear infinite;
@@ -30,7 +29,7 @@
 .login{
         text-align: center;
         color:rgb(7, 17, 63) ;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Times New Roman', Times, serif;
         font-weight: bolder;
     }
 
@@ -39,29 +38,29 @@
         color: rgb(7, 17, 63);
         font-weight: bolder;
         align-items: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "times new roman", Times, serif;
     }
 input[type=text],input[type=password]{
     width: 80%;
     padding: 12px 20px;
     margin:8px 0;
     display:block;
-    border: 1px solid aliceblue;
+    border: 1px  aliceblue;
     border-radius: 10px;
     background-color: aliceblue;
 }
 input:hover {
-    border: 2px solid rgb(7, 17, 63); /* Blue border on hover */
+    border: 2px  rgb(7, 17, 63);
     border-radius: 5px; 
 }
 .join a{
     color: rgb(6, 88, 88);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     }
     
 .join a:hover{
     color: rgb(7, 17, 63);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .logo-container{
@@ -76,25 +75,7 @@ input:hover {
     margin-right: 10px;
     
  }
- .logoname{
-    display: inline-block;
-    position: relative;
-    align-items: flex-start;
-    color: rgb(7, 17, 63);
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 50px;
-    margin-top: 0;
-    flex-grow: 0;
-    padding-top: 10px;
-}
-.ease{
-    color: aliceblue;
-    text-shadow:2px 2px 2px rgb(7, 17, 63);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 45px;
-    display: inline;
-}
+
 .sub{
     background-color: rgb(7, 17, 63);
     border: none;
@@ -130,10 +111,10 @@ input:hover {
     cursor: pointer;
     width: 200px;
     margin-top: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-    color:rgb(7, 17, 63) ;
+    color:aliceblue ;
     font-size: 15px;
-    transform: translateZ(2px) rotateX(2deg);
+    box-shadow: none;
+    
     
 }
 .btn-container {
@@ -143,13 +124,16 @@ input:hover {
   }
 
 .btnapp:hover {
-    background-color: rgb(7, 17, 63);
+    background-color: aliceblue;
+    color: rgb(7, 17, 63);
     font-weight: bold;
     text-decoration:none;
-    color: aliceblue;
+    
   }
   .logbut {
     background-color: rgb(7, 17, 63);
+    color: white;
+    height: 50px;
     width: 140px;
     font-weight: bolder;
     border-radius: 20px;
@@ -157,6 +141,7 @@ input:hover {
   }
   .logbut:hover {
     background-color: aliceblue;
+    color: rgb(7, 17, 63);
     border: none;
     font-weight: bolder;
   }

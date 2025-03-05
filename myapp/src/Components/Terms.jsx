@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import logo from '../assets/Images/logo.jpeg';
+import logo from '../assets/Images/namelogo.png';
 import './Terms.css';
 import { Link } from 'react-router-dom';
 export default function Terms() {
@@ -23,25 +23,26 @@ export default function Terms() {
           };
   return (
     <div>        
-        <header>
-            <div className="logo-container"> 
-                <img 
-                    src={logo} 
-                    alt="My Image" 
-                    className="my-image" 
-                />
-            <div className="logoname"> 
-                    <h1>Estate<span className="ease">Ease</span></h1>
-            </div>
-            </div>
-            <center>
-        
-            <button onClick={scrollToTerms} className='butn'>Terms and Conditions</button>
-            <span className="button-spacer"></span>
-            <button onClick={scrollToPrivacy} className='butn'>Privacy Policy</button>
-   
-            </center> 
+        <header className='header'>
+          <div className="logo-container"> 
+            <img 
+              src={logo} 
+              alt="My Image" 
+              className="logo-image" 
+            />
+          </div>
+
         </header>
+        <div className='terms-container'>
+        <center>
+        
+        <button onClick={scrollToTerms} className='butn'>Terms and Conditions</button>
+        <span className="button-spacer"></span>
+        <button onClick={scrollToPrivacy} className='butn'>Privacy Policy</button>
+
+        </center> 
+        </div>
+
         <div id='terms-section'>
         <div className="outer-wrapper">
             <div className="container">

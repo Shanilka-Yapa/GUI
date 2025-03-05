@@ -6,7 +6,7 @@ body{
 .login{
     text-align: center;
     color:rgb(7, 17, 63) ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times new roman', Times, serif;
     font-weight: bolder;
 }
 
@@ -14,7 +14,7 @@ body{
     text-align: left;
     color: rgb(7, 17, 63);
     font-weight: bolder;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Times new roman', Times, serif;
 }
 
 input[type=text],input[type=password]{
@@ -29,58 +29,17 @@ input[type=text],input[type=password]{
     
 }
 
-/*button{
-    background-color:rgb(7, 17, 63);
-    color: aliceblue;
-    font-weight: bolder;
-    padding: 14px 20px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-    border: 1px solid rgb(7, 17, 63);
-    cursor: pointer;
-    width: auto;
-    
-}
 
-button:hover{
-    background-color: aliceblue;
-    border: 1px solid aliceblue;
-    color:rgb(7, 17, 63) ;
-    font-weight: bolder;
-}*/
-
-
-
-.logoname{
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-    color: rgb(7, 17, 63);
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 50px;
-    flex-grow: 0;
-    padding-top: 30px;
-}
-
-
-.ease{
-    color: aliceblue;
-    text-shadow:2px 2px 2px rgb(7, 17, 63);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 45px;
-    display: inline;
-}
 
 .homecontainer{
     display: flex;
     padding: 20px;
     /*background-image: url('../assets/Images/Background1.jpg');*/
-    background-color: rgba(8, 110, 141, 0.863);
+    background-color: rgb(7, 17, 63);
     background-size: content; 
     background-position: center center;
     background-repeat: no-repeat;
+    height: 100px;
 }
 
 .logo-container {
@@ -90,8 +49,8 @@ button:hover{
  }
  
 .my-image {
-    width: 100px; 
-    height: 100px; 
+    width: 50px; 
+    height: 50px; 
     border-radius: 50px; 
     padding-top: 1px;
     margin-right: 10px;
@@ -100,28 +59,89 @@ button:hover{
 
 .btn{
         background-color: aliceblue;
-        border: 5px solid rgb(7, 17, 63);
+        border: 5px  rgb(7, 17, 63);
         color: rgb(7, 17, 63);
         width: 175px;
         height: 100px;
         
 }
 
-d{
+/*.d{
     text-decoration: none;
     transition: transform 0.3s ease;
     margin-right: 20px;
     color:rgb(7, 17, 63) ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
-d:hover{
+.d:hover{
     text-decoration: none;
     cursor: pointer;
     transform: scale(1.2);
 
-}
-
+}*/
+.profileicon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .icon-container {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-container:hover {
+    transform: scale(1.2); /* Scales the icon */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    width: 150px;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-menu li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #007bff;
+  }
+  
+  .profileicon .icon-container {
+    background-color: white; 
+    border-radius: 50%; /* Makes the container circular */
+    padding: 10px; /* Padding to create space inside the circle */
+    display: inline-block; /* Makes the container fit the icon */
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle shadow around the circle */
+    justify-content: flex-end;
+  }
+  
+  .profileicon .icon-container:hover {
+    transform: scale(1.2); /* Optional: Scales up the icon when hovered */
+  }
+  
+  .profileicon .icon-container svg {
+    color: rgb(7, 17, 63);
+    font-size: 1.5rem;
+  }
+  
 b{
     text-decoration: none;
     color:rgb(7, 17, 63);
@@ -141,6 +161,7 @@ input:hover {
     font-size: larger;
     font-weight: bolder;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 ul{
@@ -155,13 +176,7 @@ li{
     display: flex;
 }
 
-.profileicon{
-    padding-top: 20px;
-    padding-left: 65vw;
-    display: inline-flexbox;
-    justify-content: space-between;
-    
-}
+
 .round{
     background-color: white;
     border-radius: 50%; 
@@ -173,23 +188,26 @@ li{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     
 }
+
 .content-container {
     margin-top: 20px;
     padding: 10px;
+    
   }
   
 .section-content {
     background-color: rgba(235, 226, 226, 0.5);
     color: rgb(7, 17, 63);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     padding: 20px;
     border-radius: 5px;
     border: 2px solid rgb(39, 5, 80);
     margin-bottom: 10px;
+    
   }
 .wel{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(39, 5, 80);
     font-size: 40px;
 }
@@ -237,7 +255,130 @@ li{
 } 
 .right-sidehome {
     background-color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(7, 17, 63);
     font-weight: bold;
   }
+  .loan-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #2563eb; /* Blue-600 */
+    color: rgb(7, 17, 63);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .loan-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  
+  .loan-content {
+    position: relative;
+    z-index: 10;
+    text-align: right;
+    max-width: 600px;
+    align-items: flex-end;
+  }
+  
+  .loan-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .loan-description {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+  }
+  
+  .loan-button {
+    background-color:rgb(5, 89, 114); 
+    color: aliceblue;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loan-button:hover {
+    background-color: aliceblue;
+    color: rgb(5, 89, 114);
+  }
+  /* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    margin-bottom: 15px;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modal button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(7, 17, 63);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .modal button:hover {
+    background-color: aliceblue;
+    color: rgb(7, 17, 63);
+  }
+  
+  .close-btn {
+    background-color: #ff4d4d;
+  }
+  
+  .close-btn:hover {
+    background-color: #cc0000;
+  }
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  
