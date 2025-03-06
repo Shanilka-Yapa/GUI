@@ -6,6 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <p>&copy; 2025 EstateEase. All Rights Reserved.</p>
       <p><Link to="/terms" className="Footerms">Terms and Conditions</Link></p>
+      <p>estateease@gmail.com</p>
     </footer>
   );
 };
