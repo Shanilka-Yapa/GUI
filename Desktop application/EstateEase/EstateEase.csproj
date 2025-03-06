@@ -18,6 +18,7 @@
     <None Remove="Images\house7.jpg" />
     <None Remove="Images\Logo1.jpeg" />
     <None Remove="Images\maintenanceimage.jpg" />
+    <None Remove="Images\namelogo.png" />
     <None Remove="Images\Properties.jpg" />
     <None Remove="Images\welcome.jpeg" />
   </ItemGroup>
@@ -45,9 +46,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\dashboard.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Images\House3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -66,7 +64,7 @@
     <Resource Include="Images\maintenanceimage.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\Properties.jpg">
+    <Resource Include="Images\namelogo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\welcome.jpeg">

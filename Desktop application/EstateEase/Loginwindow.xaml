@@ -7,58 +7,57 @@
         mc:Ignorable="d"
         Title="Loginwindow" Height="450" Width="800">
     <Grid>
-        <Image Source="Images/house7.jpg"
-               Stretch="UniformToFill"
-               VerticalAlignment="Center"
+        <Image 
+            Source="Images/house7.jpg"
+            Stretch="UniformToFill"
+            VerticalAlignment="Center"
                />
-        <Rectangle Width="450" 
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Stretch"
-                   Fill="Black"
-                   Opacity="0.85">
-        
+        <Rectangle 
+            Width="450" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Stretch"
+            Fill="Black"
+            Opacity="0.85">
         </Rectangle>
         <StackPanel>
-        <TextBlock
-            Text="EstateEase"
-            FontSize="50"
-            HorizontalAlignment="Center"
-            Foreground="White"
-            FontWeight="DemiBold"
-            Margin="10, 20, 0, 0"
-        />
+            <Image
+                Source="/Images/namelogo.png"
+                Width="400"
+                Opacity="0.8"/>
         </StackPanel>
-        <StackPanel Grid.Column="0"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center"
-                    Background="Transparent"
-                    Margin="150 20 0 0"
+        <StackPanel 
+            Grid.Column="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Background="Transparent"
+            Margin="150 20 0 0"
         >
             <TextBlock
-            Text="Username"
-            FontSize="25"
-            HorizontalAlignment="Left"
-            Foreground="AliceBlue"
-            Margin="50, 10, 0, 20"/>
+                Text="Username"
+                FontSize="25"
+                HorizontalAlignment="Left"
+                Foreground="AliceBlue"
+                Margin="50, 10, 0, 20"/>
             <TextBlock
-            Text="Email"
-            FontSize="25"
-            HorizontalAlignment="Left"
-            Foreground="AliceBlue"
-            Margin="50, 10, 0, 20"/>
+                Text="Email"
+                FontSize="25"
+                HorizontalAlignment="Left"
+                Foreground="AliceBlue"
+                Margin="50, 10, 0, 20"/>
             <TextBlock
-            Text="Password"
-            FontSize="25"
-            HorizontalAlignment="Left"
-            Foreground="AliceBlue"
-            Margin="50, 10, 0, 20"/>
+                Text="Password"
+                FontSize="25"
+                HorizontalAlignment="Left"
+                Foreground="AliceBlue"
+                Margin="50, 10, 0, 20"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
-                    Background="Transparent"
-                    Margin="0 30 180 0"
+        <StackPanel 
+            Grid.Column="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Background="Transparent"
+            Margin="0 30 180 0"
         >
             <TextBox
                 BorderBrush="LightBlue"
@@ -93,8 +92,9 @@
             >
             <Button
                 Style="{StaticResource RoundButtonStyle}"
-                Foreground="AliceBlue"
-                Background="#FF08293A"
+                Background="#FF56CAF1"
+                Foreground="#FF08293A"
+                FontWeight="Bold"
                 Content="Log in"
                 Width="163"
                 Height="59"

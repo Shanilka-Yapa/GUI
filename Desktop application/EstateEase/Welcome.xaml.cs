@@ -37,8 +37,6 @@ namespace EstateEase
             this.Close();
         }
 
-        
-
         private void View_Properties(object sender, RoutedEventArgs e)
         {
             Properties property = new Properties();

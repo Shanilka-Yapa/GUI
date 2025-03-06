@@ -64,6 +64,7 @@ namespace EstateEase
             }
         }
 
+        //Back button
         private void Back_Button(object sender, RoutedEventArgs e)
         {
             Welcome welcomewindow = new Welcome();
@@ -71,6 +72,7 @@ namespace EstateEase
             this.Close();
         }
 
+        //Request button
         private void Request_Button(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Do you want to request more information?", "Confirm Request", MessageBoxButton.YesNo, MessageBoxImage.Question);

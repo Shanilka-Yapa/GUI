@@ -19,14 +19,13 @@ namespace EstateEase
     /// </summary>
     public partial class Maintenance : Window
     {
-        
-
         public Maintenance()
         {
             InitializeComponent();
             RefreshDataGrid();
         }
-        
+
+        //Adding maintenance
         private void Add_Maintenance(object sender, RoutedEventArgs e)
         {
             
@@ -36,6 +35,7 @@ namespace EstateEase
             fillboxwindow.ShowDialog();
         }
 
+        //Updating maintenance
         private void Update_Maintenance(object sender, RoutedEventArgs e)
         {
             
@@ -58,6 +58,7 @@ namespace EstateEase
             }
         }
 
+        //Deleting maintenance
         private void Delete_Maintenance(object sender, RoutedEventArgs e)
         {
             var selectedIssue = InfoGrid.SelectedItem as Issue;
@@ -83,6 +84,8 @@ namespace EstateEase
                 MessageBox.Show("Please select an issue to delete");
             }
         }
+
+        //Datagrid refreshing
         private void RefreshDataGrid()
         {
             using (var context = new AppDbContext())

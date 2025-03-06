@@ -8,35 +8,35 @@
         Title="MainWindow" Height="450" Width="800"
         Background="Black">
     <Grid>
-        <Image Source="Images/Logo1.jpeg"
-               Stretch="UniformToFill"
-               VerticalAlignment="Center"
+        <Image 
+            Source="Images/Logo1.jpeg"
+            Stretch="UniformToFill"
+            VerticalAlignment="Center"
+            Opacity="0.4"
                />
-        <Rectangle Width="400" 
-                   HorizontalAlignment="Right"
-                   VerticalAlignment="Stretch"
-                   Fill="Black"
-                   Opacity="0.85"/>
-        <Button     Style="{StaticResource RoundButtonStyle}"
-                    Width="250" Height="67"
-                    Foreground="Black"
-                    Background="#FF58CFF1"
-                    FontSize="28"
-                    FontFamily="Segoe UI"
-                    FontWeight="DemiBold"
-                    HorizontalAlignment="Left"
-                    Margin="475,333,0,0"
-                    BorderThickness="0"
-                    VerticalAlignment="Top"
-                    Click="Get_started">Get started</Button>
+        <Rectangle 
+            Width="400" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Fill="Black"
+            Opacity="0.85"/>
+        <Button
+            Style="{StaticResource RoundButtonStyle}"
+            Width="250" Height="67"
+            Foreground="Black"
+            Background="#FF58CFF1"
+            FontSize="28"
+            FontFamily="Segoe UI"
+            FontWeight="DemiBold"
+            HorizontalAlignment="Left"
+            Margin="475,333,0,0"
+            BorderThickness="0"
+            VerticalAlignment="Top"
+            Click="Get_started">Get started</Button>
         <StackPanel>
-            <TextBlock
-                
-                Text="EstateEase"
-                FontSize="60"
-                HorizontalAlignment="Center"
-                Foreground="White"
-                FontWeight="Medium"/>
+            <Image
+                Height="80px"
+                Source="/Images/namelogo.png"/>
         </StackPanel>
     </Grid>
 </Window>

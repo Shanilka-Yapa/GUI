@@ -23,20 +23,28 @@ namespace EstateEase
         {
             InitializeComponent();
         }
+
+        //Showing TotalProperties
         private void Show_TotalProperties(object sender, RoutedEventArgs e)
         {
-            int totalProperties = 10;
+            int totalProperties = 5;
             TotalPropertiesText.Text = "Total Properties: " + totalProperties;
         }
+
+        //Showing Total tenants
         private void Show_TotalTenants(object sender, RoutedEventArgs e)
         {
             int totalTenants = 25;
             TotalTenantsText.Text = "Total Tenants: " + totalTenants;
         }
+
+        //Showing contacts
         private void Show_Contacts(object sender, RoutedEventArgs e)
         {
             ContactsText.Text = "Email  :estateease@gmail.com\nContacts :0712345678";
         }
+
+        //Back button
         private void Back_Button(object sender, RoutedEventArgs e)
         {
             Welcome welcomewindow = new Welcome();
