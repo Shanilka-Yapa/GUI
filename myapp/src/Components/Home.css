@@ -70,6 +70,7 @@ input[type=text],input[type=password]{
   .icon-container {
     cursor: pointer;
     transition: transform 0.3s ease;
+    color: rgb(7, 17, 63);
   }
   
   .icon-container:hover {
@@ -81,7 +82,7 @@ input[type=text],input[type=password]{
     top: 50px;
     right: 50px;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgb(7, 17, 63);
     list-style: none;
     padding: 5px;
     margin: 0;
@@ -221,14 +222,14 @@ li{
     justify-content: center;
     align-items: center; 
     padding: 20px;
-    width: 1000px;
     font-size: 30px;
     
   }
   
 .left-sidehome1 {
-    background-image: url("../assets/Images/welcome.jpg");
+
     background-position:center;
+    height: 400px;
   }
 .left-sidehome{
     background-color: rgb(7, 17, 63);

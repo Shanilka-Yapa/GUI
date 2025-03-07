@@ -38,6 +38,17 @@ db.run(
   )`
 );
 
+// Create house_requests table if it doesn't exist
+db.run(
+  `CREATE TABLE IF NOT EXISTS house_requests (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    houseId INTEGER,
+    name TEXT,
+    email TEXT,
+    phone TEXT
+  )`
+);
+
 // Register user API
 app.post("/register", (req, res) => {
   const { name, email, password } = req.body;
@@ -82,6 +93,23 @@ app.post("/apply-loan", (req, res) => {
       return res.status(500).json({ message: "Error applying for a loan", error: err.message });
     }
     res.status(200).json({ message: "Loan application submitted successfully", id: this.lastID });
+  });
+});
+
+// Handle house request form submission
+app.post("/request-info", (req, res) => {
+  const { houseId, name, email, phone } = req.body;
+
+  if (!houseId || !name || !email || !phone) {
+    return res.status(400).json({ error: "All fields are required" });
+  }
+
+  const sql = `INSERT INTO house_requests (houseId, name, email, phone) VALUES (?, ?, ?, ?)`;
+  db.run(sql, [houseId, name, email, phone], function (err) {
+    if (err) {
+      return res.status(500).json({ message: "Error submitting request", error: err.message });
+    }
+    res.status(200).json({ message: "Request submitted successfully", id: this.lastID });
   });
 });
 

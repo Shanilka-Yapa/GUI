@@ -6,76 +6,73 @@ import HouseGallery from "./HouseGallery";
 import Wishlist from "./wishlist";
 import Loan from './Loan';
 import ProfileIcon from './ProfileIcon';
+import WelcomeImage from "../assets/Images/welcome.jpg";
+import ContactsImage from "../assets/Images/longlogo.png";
 
 library.add(fas);
 import './Home.css';
 import logo from '../assets/Images/namelogo.png';
 export default function Home() {
-  const [activeSection, setActiveSection] = useState(null);
-  const [wishlist, setWishlist] = useState([]); // State for wishlist
+const [activeSection, setActiveSection] = useState("home"); // Set "home" as default
+const [wishlist, setWishlist] = useState([]); // State for wishlist
   
 
-  const toggleSection = (section) => {
-    setActiveSection(activeSection === section ? null : section);
-  };
-    // Function to add a house to the wishlist
-    const addToWishlist = (house) => {
-      setWishlist((prevWishlist) => [...prevWishlist, house]);
-    };
+const toggleSection = (section) => {
+  setActiveSection(activeSection === section ? null : section);
+};
+// Function to add a house to the wishlist
+const addToWishlist = (house) => {
+  setWishlist((prevWishlist) => [...prevWishlist, house]);
+};
   
-    // Function to remove house from wishlist
-    const removeFromWishlist = (id) => {
-      setWishlist(wishlist.filter(house => house.id !== id));
-    };
+// Function to remove house from wishlist
+const removeFromWishlist = (id) => {
+  setWishlist(wishlist.filter(house => house.id !== id));
+};
     
-  return (
-    <div className="Home">
-      <header> 
-        <title>Home page</title>
-        <div className="homecontainer">
-          <div className="logo-container"> 
-            <img 
-              src={logo} 
-              alt="My Image" 
-              className="logo-image" 
-            />
-          </div>
+return (
+  <div className="Home">
+    <header> 
+      <title>Home page</title>
+      <div className="homecontainer">
+        <div className="logo-container"> 
+          <img 
+            src={logo} 
+            alt="My Image" 
+            className="logo-image" 
+           />
+        </div>
           <ProfileIcon />
       </div>
-      </header>
+    </header>
 
       <main> 
         <div>
           <center>
           <nav className="navbar">
             <ul>
-              <li onClick={() => toggleSection("home")}><d><FontAwesomeIcon icon="home" /> Home</d></li>
-              <li onClick={() => toggleSection("about")}><d><FontAwesomeIcon icon="info-circle"/>About us</d></li>
-              <li onClick={() => toggleSection("contacts")}><d><FontAwesomeIcon icon="phone"/>Contact</d></li>
-              <li onClick={() => toggleSection("properties")}><d><FontAwesomeIcon icon="house-user"/>Properties</d></li>
-              <li onClick={() => toggleSection("loan")}><d><FontAwesomeIcon icon="hand-holding-usd"/>House-loans</d></li>
-              <li onClick={() => toggleSection("wishlist")}><d><FontAwesomeIcon icon="shopping-cart"/>Wishlist</d></li>
+              <li onClick={() => toggleSection("home")}><d className="icon-container"><FontAwesomeIcon icon="home" /> Home</d></li>
+              <li onClick={() => toggleSection("about")}><d className="icon-container"><FontAwesomeIcon icon="info-circle"/>About us</d></li>
+              <li onClick={() => toggleSection("contacts")}><d className="icon-container"><FontAwesomeIcon icon="phone"/>Contact</d></li>
+              <li onClick={() => toggleSection("properties")}><d className="icon-container"><FontAwesomeIcon icon="house-user"/>Properties</d></li>
+              <li onClick={() => toggleSection("loan")}><d className="icon-container"><FontAwesomeIcon icon="hand-holding-usd"/>House-loans</d></li>
+              <li onClick={() => toggleSection("wishlist")}><d className="icon-container"><FontAwesomeIcon icon="shopping-cart"/>Wishlist</d></li>
             </ul>
           </nav>
           </center>
                 {/* Section Content */}
         <div className="content-container">
             {activeSection === "home" && (
-          <div className="section-content">
-            <p className="wel">
-              <center>
-                Welcome to <b style={{ color: "rgba(8, 110, 141, 0.863)", fontSize: "50px" }}>EstateEase!</b>
-                <div className="containerhome">
-                  <div className="left-sidehome1" >
-                  </div>
-                  <div className="right-sidehome">
-                  We're excited to help you streamline your property management. 
+          <div className="loan-container">
+            <img src={WelcomeImage} alt="Home Loan" className="loan-image" />
+            <div className="loan-content">
+              <h1 className="loan-title">Welcome to EstateEase </h1>
+              <p className="loan-description" style={{fontWeight:"bold"}}>
+              We're excited to help you streamline your property management. 
                   Our system is designed to be user-friendly and intuitive, allowing you to easily track tenants, manage maintenance requests, and collect rent with just a few clicks. 
                   Explore the dashboard and discover how EstateEase can simplify your property management tasks.
-                  </div>
-                </div>
-              </center>
-            </p>
+              </p>
+            </div>
           </div>
             )}
 
@@ -148,15 +145,17 @@ export default function Home() {
           )}
 
           {activeSection === "contacts" && (
-          <div className="section-content">
-            <p className="wel">
-              <center>
-                <b style={{ color: "rgba(8, 110, 141, 0.863)", fontSize: "50px" }}>EstateEase!<br/> <b>You can contact us through</b></b><br/>
+          <div className="loan-container"style={{backgroundColor:"lightblue"}} >
+            <img src={ContactsImage} alt="Contacts" className="loan-image" />
+            <div className="loan-content">
+              <h1 className="loan-title">Contact us through</h1>
+              <p className="loan-description">
               Email     : estateease@gmail.com<br/>
               Telephone : +94712345678
-              </center>
-            </p>
+              </p>
+            </div>
           </div>
+          
             )}
 
             {activeSection === "properties" && (

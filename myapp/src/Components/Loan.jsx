@@ -65,7 +65,7 @@ const Loan = () => {
               
               {/* Buttons in one row */}
               <div className="button-row">
-                <button type="submit" className="save-btn">Save</button>
+                <button type="submit" className="save-btn">Submit</button>
                 <button type="button" className="close-btn" onClick={() => setIsModalOpen(false)}>Close</button>
               </div>
             </form>

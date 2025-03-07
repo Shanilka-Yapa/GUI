@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';  // Make sure to import the icon
+import { Link, useNavigate } from 'react-router-dom';
 
 const ProfileIcon = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const ProfileIcon = () => {
         <ul className="dropdown-menu">
           <li><a href="/profile">Profile</a></li>
           <li><a href="/settings">Settings</a></li>
-          <li><a href="/logout">Logout</a></li>
+          <li><a href="/logout"><Link to="/login">Logout</Link></a></li>
         </ul>
       )}
     </nav>
